@@ -90,3 +90,255 @@ The project follows a layered industrial automation architecture:
 |     Simulated Process       |
 | Juice Bottling Operations   |
 +-----------------------------+
+
+
+---
+
+## Process Monitoring
+
+The SCADA interface provides an operator-level overview of the simulated juice bottling process.
+
+The Perspective dashboard is designed to monitor:
+
+- System operating status
+- Safety status
+- Tank levels
+- Process flow
+- Equipment states
+- Operator controls
+- Production information
+- Alarm and fault conditions
+
+The dashboard allows the operator to observe the process through a centralized visualization interface.
+
+### Main Process Elements
+
+| Process Element | Monitoring Function |
+|---|---|
+| Juice Tank | Monitors juice level |
+| Water Tank | Monitors water level |
+| Process Equipment | Displays operating status |
+| Conveyor | Represents material movement |
+| Control Panel | Provides operator commands |
+| Safety System | Displays safety/interlock status |
+| Alarm System | Displays abnormal conditions |
+| Production Section | Displays production information |
+
+---
+
+## SCADA Dashboard
+
+The main Ignition Perspective dashboard provides a centralized operator interface for monitoring the simulated juice bottling plant.
+
+![Juice Bottling Plant SCADA Dashboard](screenshots/project/juice-bottling-dashboard.png)
+
+### Dashboard Functions
+
+The dashboard provides visualization of:
+
+- System status
+- Safety status
+- Process conditions
+- Tank levels
+- Equipment states
+- Operator controls
+- Alarm conditions
+- Production information
+
+---
+
+## Control Logic
+
+The simulated process follows a sequence-based control approach.
+
+The general operating sequence is:
+
+```text
+System Initialization
+        |
+        v
+Safety / Interlock Check
+        |
+        v
+Start Command
+        |
+        v
+Process Operation
+        |
+        v
+Monitor Process Sensors
+        |
+        v
+Update Process Status
+        |
+        v
+Monitor Fault Conditions
+        |
+        +------ Fault ------> Safe Stop
+        |
+        v
+Continue Operation
+
+
+
+```
+---
+
+## Safety Interlocks
+
+Safety conditions are monitored before and during process operation.
+
+Typical safety conditions include:
+
+- Emergency stop
+- Equipment fault
+- Process fault
+- Sensor fault
+- Communication fault
+- Unsafe operating condition
+
+When a critical safety condition occurs, the process is designed to transition to a safe stopped state and generate an appropriate alarm.
+
+---
+
+## Alarm Management
+
+The SCADA system provides alarm monitoring for abnormal process conditions.
+
+Example alarm conditions include:
+
+| Alarm | Trigger | Expected Response |
+|---|---|---|
+| Emergency Stop | E-Stop activated | Process enters safe state |
+| Process Fault | Process fault detected | Process stops / alarm generated |
+| Equipment Fault | Equipment fault detected | Equipment status changes |
+| Communication Fault | Data unavailable | Communication alarm |
+| Sensor Fault | Invalid sensor condition | Sensor fault indication |
+
+The alarm interface is intended to provide operators with clear information about abnormal process conditions.
+
+---
+
+## Historical Data and Trends
+
+Historical process data can be used for:
+
+- Production analysis
+- Process monitoring
+- Fault investigation
+- Downtime analysis
+- Trend analysis
+- Performance monitoring
+
+Potentially monitored variables include:
+
+- Tank levels
+- Equipment states
+- Production counts
+- Process states
+- Fault events
+- Alarm events
+- Start/Stop events
+
+---
+
+## Testing and Validation
+
+The system can be evaluated under both normal and abnormal operating conditions.
+
+| Test Case | Condition | Expected Result |
+|---|---|---|
+| Start | Start command activated | Process starts |
+| Stop | Stop command activated | Process stops |
+| Emergency Stop | E-Stop activated | System enters safe state |
+| Process Fault | Fault condition activated | Alarm generated |
+| Sensor Event | Sensor activated | Process state updates |
+| Communication Loss | Data unavailable | Communication fault indicated |
+
+The validation process checks whether operator commands, process states, alarms, safety conditions, and SCADA visualization respond as expected.
+
+---
+
+## Project Workflow
+
+```text
+Process Requirement
+        |
+        v
+Identify Process Variables
+        |
+        v
+Develop Control Logic
+        |
+        v
+PLC / Process Simulation
+        |
+        v
+OPC UA Communication
+        |
+        v
+Ignition Gateway
+        |
+        v
+SCADA Tags
+        |
+        v
+Perspective HMI
+        |
+        v
+Alarms & Safety Interlocks
+        |
+        v
+Historical Data
+        |
+        v
+Testing & Validation
+```
+
+---
+
+## Project Screenshots
+
+### Main SCADA Dashboard
+
+![Juice Bottling Plant Dashboard](screenshots/project/juice-bottling-dashboard.png)
+
+### Process Overview
+
+![Process Overview](screenshots/project/process-overview.png)
+
+### Alarm Monitoring
+
+![Alarm Monitoring](screenshots/project/alarm-monitoring.png)
+
+### Historical Trends
+
+![Historical Trends](screenshots/project/historical-trend.png)
+
+---
+
+## Project Objectives
+
+1. Develop an industrial automation SCADA simulation.
+2. Develop a Perspective-based operator interface.
+3. Demonstrate real-time process monitoring.
+4. Represent industrial control logic.
+5. Demonstrate safety interlocks.
+6. Demonstrate alarm and fault monitoring.
+7. Organize process variables using SCADA tags.
+8. Study PLC-to-SCADA communication concepts.
+9. Demonstrate production and process monitoring.
+10. Evaluate the system under normal and abnormal conditions.
+
+---
+
+## Project Status
+
+**Status:** Academic Industrial Automation Simulation
+
+**Platform:** Ignition SCADA Perspective
+
+**Domain:** Industrial Automation / SCADA / HMI
+
+---
+
