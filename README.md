@@ -52,7 +52,7 @@ The project focuses on developing an operator-oriented SCADA interface rather th
 
 ---
 
-# System Architecture
+## System Architecture
 
 The project follows a layered industrial automation architecture:
 
@@ -88,12 +88,9 @@ The project follows a layered industrial automation architecture:
               v
 +-----------------------------+
 |     Simulated Process       |
-| Juice Bottling Operations   |
+|   Juice Bottling Operations |
 +-----------------------------+
-
-
-
----
+```
 
 ---
 
@@ -181,10 +178,11 @@ Monitor Fault Conditions
         |
         v
 Continue Operation
-
-
-
 ```
+
+The control logic is designed so that the process operates when the required permissive and safety conditions are satisfied.
+
+---
 
 ## Safety Interlocks
 
@@ -334,6 +332,43 @@ Testing & Validation
 
 ---
 
+## Skills Demonstrated
+
+- Industrial Automation
+- SCADA
+- Ignition Perspective
+- HMI Development
+- PLC Concepts
+- OPC UA Communication
+- SCADA Tag Management
+- Alarm Management
+- Safety Interlocks
+- Process Visualization
+- Industrial System Architecture
+- System Testing
+- Technical Documentation
+
+---
+
+## Future Improvements
+
+Possible future extensions include:
+
+- Physical PLC integration
+- Industrial sensor integration
+- Industrial drive integration
+- Factory I/O integration
+- Advanced production analytics
+- OEE dashboard
+- MQTT / IIoT integration
+- Predictive maintenance
+- Role-based user management
+- Advanced reporting
+- MES integration
+- Multi-station production simulation
+
+---
+
 ## Project Status
 
 **Status:** Academic Industrial Automation Simulation
@@ -344,3 +379,25 @@ Testing & Validation
 
 ---
 
+## Documentation
+
+The project documentation and related internship report can be added to the `documentation` directory.
+
+The documentation covers industrial automation, SCADA architecture, Ignition Perspective, OPC UA communication, PLC concepts, tag architecture, alarm management, historical data, and system testing.
+
+---
+
+## Disclaimer
+
+This repository represents a software-based industrial automation simulation and educational project.
+
+It is not intended to represent a commissioned production system or a safety-certified industrial installation.
+
+---
+
+## Author
+
+**Rithikswaran R**
+
+B.Tech – Automation and Robotics Engineering  
+Amrita Vishwa Vidyapeetham, Coimbatore
