@@ -303,17 +303,11 @@ Testing & Validation
 
 ![Juice Bottling Plant Dashboard](screenshots/project/juice-bottling-dashboard.png)
 
-### Process Overview
-
-![Process Overview](screenshots/project/process-overview.png)
-
 ### Alarm Monitoring
 
 ![Alarm Monitoring](screenshots/project/alarm-monitoring.png)
 
-### Historical Trends
 
-![Historical Trends](screenshots/project/historical-trend.png)
 
 ---
 
@@ -378,26 +372,3 @@ Possible future extensions include:
 **Domain:** Industrial Automation / SCADA / HMI
 
 ---
-
-## Documentation
-
-The project documentation and related internship report can be added to the `documentation` directory.
-
-The documentation covers industrial automation, SCADA architecture, Ignition Perspective, OPC UA communication, PLC concepts, tag architecture, alarm management, historical data, and system testing.
-
----
-
-## Disclaimer
-
-This repository represents a software-based industrial automation simulation and educational project.
-
-It is not intended to represent a commissioned production system or a safety-certified industrial installation.
-
----
-
-## Author
-
-**Rithikswaran R**
-
-B.Tech – Automation and Robotics Engineering  
-Amrita Vishwa Vidyapeetham, Coimbatore
