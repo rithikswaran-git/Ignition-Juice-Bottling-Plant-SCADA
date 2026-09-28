@@ -92,6 +92,9 @@ The project follows a layered industrial automation architecture:
 +-----------------------------+
 
 
+
+---
+
 ---
 
 ## Process Monitoring
@@ -182,7 +185,6 @@ Continue Operation
 
 
 ```
----
 
 ## Safety Interlocks
 
