@@ -326,42 +326,7 @@ Testing & Validation
 
 ---
 
-## Skills Demonstrated
 
-- Industrial Automation
-- SCADA
-- Ignition Perspective
-- HMI Development
-- PLC Concepts
-- OPC UA Communication
-- SCADA Tag Management
-- Alarm Management
-- Safety Interlocks
-- Process Visualization
-- Industrial System Architecture
-- System Testing
-- Technical Documentation
-
----
-
-## Future Improvements
-
-Possible future extensions include:
-
-- Physical PLC integration
-- Industrial sensor integration
-- Industrial drive integration
-- Factory I/O integration
-- Advanced production analytics
-- OEE dashboard
-- MQTT / IIoT integration
-- Predictive maintenance
-- Role-based user management
-- Advanced reporting
-- MES integration
-- Multi-station production simulation
-
----
 
 ## Project Status
 
